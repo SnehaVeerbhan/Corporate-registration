@@ -1,0 +1,169 @@
+.registration-container {
+  display: flex;
+  border: 1px  black ;
+}
+
+.info {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  height: 550px;    
+  width: 800px; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  position: relative; 
+  z-index: -1;
+}
+h1{
+  font-size: 50px;
+  z-index: 1;
+  animation: moveUp 2s ease-out ;
+}
+p{
+  font-size: 20px;
+  z-index: 1;
+  animation: moveUp 4s ease-out ;
+}
+ul{
+  font-size: 20px;
+  z-index: 1;
+  animation: moveUp 6s ease-out ;
+}
+li:nth-child(2) {
+  animation-delay: 1s; 
+}
+
+li:nth-child(3) {
+  animation-delay: 2s; 
+}
+li:nth-child(4) {
+  animation-delay: 1s; 
+}
+
+li:nth-child(5) {
+  animation-delay: 2s; 
+}
+
+.form {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 80px;
+  height: 580px;
+  width: 800px;
+  background-color: white;
+  padding: 20px;  
+}
+.tab1{
+  margin-left: 100px;
+  width: 180px;
+  height: 35px;
+  font-size: 25px;
+  border: none;
+  border-radius: 10%;
+}
+.tab2{
+  margin-left: 150px;
+  width: 180px; 
+  height: 35px;
+  font-size: 25px;
+  border: none;
+  border-radius: 10%;
+}
+input {
+  margin-left: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.option{
+  margin-left: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 522px;
+}
+.submit-btn{
+  margin-left: 270px;
+  width: 200px;
+  background-color:rgb(74, 74, 234) ;
+  color: white;
+}
+.tab1 a , .tab2 a{
+  text-decoration: none;
+  color: gray;
+}
+.tab1:hover , .tab2:hover{
+ background-color: rgb(74, 74, 234);
+}
+.tab1 a:hover , .tab2 a:hover{
+  color: black;
+}
+
+.rotating-box {
+  display:flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top:0px;
+  background-color: transparent;
+  animation: rotate 10s infinite linear;
+  border: 5px solid rgb(170, 168, 168);
+  z-index: -1;
+  justify-content: space-evenly;
+}
+#box1{
+  margin-top: 0px;
+  margin-left: 10px;
+  
+}
+#box2{
+  margin-top: 5px;
+  margin-left: 220px;
+  
+}
+#box3{
+  margin-top: 9px;
+  margin-left: 500px;
+  
+}
+#box4{
+  margin-top:150px;
+  margin-left: 40px;
+}
+#box5{
+  margin-top: 180px;
+  margin-left: 280px;
+}
+#box6{
+  margin: 310px;
+  margin-left: 10px;
+}
+
+@keyframes rotate {
+from {
+  transform: rotate(0deg);
+  width: 10px;
+  height: 10px;
+  opacity: 0.8;
+  
+}
+
+to {
+  transform: rotate(360deg);
+  width: 140px;
+  height: 140px;
+  opacity: 0.3;
+}
+}
+@keyframes moveUp {
+  from {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
